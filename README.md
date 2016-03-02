@@ -1,5 +1,7 @@
 ## arrzip
-
+[![npm version](https://img.shields.io/npm/v/arrzip.svg)](https://www.npmjs.com/package/arrzip)
+[![Build Status](https://travis-ci.org/abrelsfo/arrzip.svg?branch=master)](https://travis-ci.org/abrelsfo/arrzip.svg?branch=master)
+[![NPM downloads](http://img.shields.io/npm/dm/arrzip.svg?style=flat)](http://npmjs.org/arrzip)
 > Merge N number of arrays by shortest or longest array
 
 ## Installation
