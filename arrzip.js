@@ -46,19 +46,23 @@ module.exports = function(arr){
   var singleFlag = 0;
 
   for (var key in arguments) {
-    if (arguments[key] === true && singleFlag === 0) {
-      singleFlag = 1;
-      start = 1
-    } else if (!Array.isArray(arguments[key]) && (typeof arguments[key] !== 'boolean')) {
-      throw new TypeError('arrzip expects Arrays and optional boolean, got "' + arguments[key] + '" type: ' + (typeof arguments[key]));
-    } else if (!Array.isArray(arguments[key]) && singleFlag === 1) {
-      throw new Error('arrzip expects 0 or 1 flag, got more');
-    } else if (arguments[key] === false){
-      continue
-    } else {
-      args.push(arguments[key]);
-    }
+    args.push(arguments[key]);
   };
+
+  if (typeof args[args.length-1] === 'boolean'){
+    start = args[args.length-1];
+    args = args.slice(0,-1);
+  }
+
+  function allArrays(element, index, array){
+    return Array.isArray(element);
+  }
+
+  if (args.length < 2){
+    throw new Error('arrzip expects two arrays, got ' + args.length);
+  } else if (!args.every(allArrays)) {
+    throw new TypeError('Expected all arrays, didn\'t get all arrays');
+  }
 
   var extremes = findExtremes(args.slice(0, args.length));
 
