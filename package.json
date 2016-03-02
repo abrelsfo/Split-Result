@@ -1,6 +1,6 @@
 {
   "name": "arrzip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Merge n number of arrays by shortest or longest array",
   "main": "arrzip.js",
   "directories": {
