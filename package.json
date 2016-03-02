@@ -1,0 +1,38 @@
+{
+  "name": "arrzip",
+  "version": "0.0.0",
+  "description": "Merge n number of arrays by shortest or longest array",
+  "main": "arrzip.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abrelsfo/arrzip.git"
+  },
+  "keywords": [
+    "zip",
+    "merge",
+    "array",
+    "list",
+    "short",
+    "long",
+    "shortest",
+    "longest",
+    "multiple",
+    "Alex"
+  ],
+  "author": "Alex Brelsford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abrelsfo/arrzip/issues"
+  },
+  "homepage": "https://github.com/abrelsfo/arrzip#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
