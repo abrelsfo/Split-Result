@@ -28,7 +28,7 @@ console.log(shortest);
 ### zip(\*arguments[, longest])
 
 ##### \*arguments
-Type: Array
+Type: Array<br>
 Condition: N number of arrays
 
 ##### longest
