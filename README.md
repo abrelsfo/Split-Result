@@ -27,7 +27,7 @@ console.log(shortest);
 
 ### zip(\*arguments[, longest])
 
-##### arguments
+##### \*arguments
 Type: Array
 Condition: N number of arrays
 
